@@ -1,0 +1,45 @@
+* {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.nav-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-image {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-text {
+    flex-wrap: wrap;
+    display: grid;
+    position: relative;
+    margin-left: 2rem;
+    padding: 30px;
+    top: 30vh;
+    width: 100%;
+    height: 40vh;
+}
+
+#search {
+    justify-items: left;
+    flex-direction: column;
+}
+
+.footer {
+    position: relative;
+    justify-items: flex-end;
+    bottom: 0;
+}
