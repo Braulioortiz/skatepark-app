@@ -1,0 +1,83 @@
+* {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar {
+    display: flex;
+    position: relative;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 650px;
+}
+
+.banner-text {
+    display: grid;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+}
+
+.banner-text .h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.box-buttons {
+    display: grid;
+    position: absolute;
+    text-align: left;
+    padding: 30px;
+    top: 40%;
+}
+
+span {
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    margin: 2rem;
+    padding: 0 auto;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.img-slide {
+    position: relative;
+    display: content;
+    flex-direction: row;
+    top: 20px;
+}
+
+.btn-select {
+    justify-self: center;
+    display: flex;
+    margin: 15px;
+    padding: 0 10px;
+}
+
+.footer {
+    position: relative;
+    justify-self: center;
+    bottom: 0;
+}
