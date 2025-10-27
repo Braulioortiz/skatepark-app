@@ -1,12 +1,19 @@
 * {
-    max-width: 100%;
     padding: 0;
     margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
 }
 
 .nav-bar {
     display: flex;
     position: relative;
+    background-color: #2b2b2b;
 }
 
 .hero-image {
@@ -20,7 +27,7 @@
 }
 
 .banner-text {
-    display: grid;
+    grid: inherit;
     position: absolute;
     top: 0;
     color: #fff;
@@ -49,31 +56,52 @@ span {
     margin-top: 10px;
 }
 
-.container {
-    margin: 2rem;
-    padding: 0 auto;
-    position: relative;
-}
-
-.carousel-container {
+.carousel-slide {
+    width: 1300px;
+    overflow: hidden;
     display: flex;
-    align-content: center;
-    margin: 0 auto;
-    padding: 0;
+    padding: 30px 40px;
 }
 
-.img-slide {
-    position: relative;
-    display: content;
-    flex-direction: row;
-    top: 20px;
+.carousel-slide .carousel-item {
+    width: 400px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-right: 40px;
 }
 
-.btn-select {
-    justify-self: center;
+.carousel-slide .carousel-item img {
+    width: 400px;
+    height: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.carousel-slide .carousel-item .information button {
+    padding: 20px 30px;
     display: flex;
-    margin: 15px;
-    padding: 0 10px;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    justify-content: space-between;
+}
+
+.carousel-slide .carousel-item .information .btn-select {
+    margin: 20px 0;
+    width: 100%;
+    background: rgb(230, 10, 65);
+    outline: none;
+    color: white;
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-slide .arrow {
+    width: 1300PX;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
 }
 
 .footer {
