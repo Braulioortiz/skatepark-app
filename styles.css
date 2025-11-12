@@ -92,6 +92,42 @@ nav ul li a {
     }
 }
 
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li {
+        padding: 30px;
+        z-index: 999;
+        backdrop-filter: blur(7px);
+        background: #6b6b6ba1;
+    }
+    .menu-icon {
+        display: block;
+    } 
+
+    #menuList {
+        transition: all 0.5s;
+    }
+
+    body {
+        width: 550px;
+    }
+}
+
+
 .hero-image {
     display: flex;
     position: relative;
