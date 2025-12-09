@@ -272,6 +272,9 @@ span {
 }
 
 .select {
+    position: relative;
+    margin-top: 20px;
+    display: block;
     background-color: #ff5614;
     width: 60%;
     color:white;
