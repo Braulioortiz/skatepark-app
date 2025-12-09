@@ -43,8 +43,9 @@ nav ul li a {
     color: #fff;
 }
 
-.menu-icon {
+.menu-icon i{
     display: none;
+    color: #fff;
 }
 
 @media (max-width: 600px) {
@@ -65,8 +66,8 @@ nav ul li a {
         background: #6d6d6da1;
     }
 
-    .menu-icon {
-        display: block;
+    .menu-icon i{
+        display: flex;
     } 
 
     #menuList {
