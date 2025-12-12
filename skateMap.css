@@ -141,44 +141,67 @@ section {
 }
 
 .button-option-1  {
-    position: absolute;
+    position: relative;
     justify-self: right;
-    justify-content: space-between;
     display: block;
-    padding: 20%;
+    padding: 10%;
     width: 50%;
-    top: 55vh;
+    height: 2vh;
+    bottom: 40vh;
 }
 .button-option-1 .bus {
+    display: flex;
     width: 330px;
-    height: 50px;
+    height: 50px; 
+    justify-content: space-between;
+    align-items: center;
     border-radius: 5px;
-    padding: 10px; 
-    align-items: left;
+    padding: 3%;
     background: #2b2b2b;
     border-color: 1px solid gray;
-    color: white
+    color: white;
+    cursor: pointer;    
 }
  
 .button-option-2  {
     position: absolute;
     justify-self: right;
     display: block;
-    padding: 20%;
+    padding: 10%;
     width: 50%;
-    top: 70vh;
+    height: 2vh;
+    top: 100vh;
 }
 
 .button-option-2 .food {
+    display: flex;
     width: 330px;
     height: 50px;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 5px;
+    padding: 3%;
     background: #2b2b2b;
     border-color: 1px solid gray;
-    color: white;
-    
+    color: white; 
+    cursor: pointer;
 }
 
+.footer {
+    position: relative;
+    background-color: #2b2b2b;
+    max-width: 100%;
+    height: 58vh;
+    top: 10rem;
+}
+.footer li a{
+    margin: 30px;
+    padding: 40px;
+    font-size: small;
+    justify-items: left;
+    display: flex;
+    color: white;
+}
 
 
 
