@@ -33,13 +33,13 @@
       <p>SkateRute.cr. Skatepark list and pictures.</p>
     </div>
 
-<section>S
-      <div class="single-carousel">
+<section>
+      <div class="single-carousel" data-name="jose maria-skat">
         <div class="carousel-track">
-           <img class="carousel-image active" src="image-skates/jose_ma_skate.webp" alt="Jose Maria Skatepark">
-           <img class="carousel-image" src="image-skates\lagos_skate.webp" alt="Jose Maria Skatepark">
-           <img class="carousel-image" src="image-skates\lospinos_skate.webp" alt="Jose Maria Skatepark">
-           <img class="carousel-image" src="image-skates\guachipelin_skate.jpg" alt="Jose Maria Skatepark">
+           <img class="carousel-image active" src="image-skates\josema_skat3.jpeg" alt="Jose Maria Skatepark">
+           <img class="carousel-image" src="image-skates\josema_skat6.jpeg" alt="Jose Maria Skatepark">
+           <img class="carousel-image" src="image-skates\josema_skat5.jpeg" alt="Jose Maria Skatepark">
+           <img class="carousel-image" src="image-skates\josema_skat4.jpeg" alt="Jose Maria Skatepark">
         </div>
 
           <div class="carousel-text">
@@ -55,12 +55,12 @@
      <button class="carousel-btn prev">❮</button>
      <button class="carousel-btn next">❯</button>
     </div>
-      <div class="single-carousel">
+      <div class="single-carousel" data-name="salvador-skat">
         <div class="carousel-track">
-           <img class="carousel-image active" src="image-skates\savador_skatepark.webp" alt="salvador-skat">
-           <img class="carousel-image" src="image-skates\costaRicaTamarindoSkatePark-01-1024x512.jpg" alt="salvador-skat">
-           <img class="carousel-image" src="image-skates\skate_img4.avif" alt="Jose Maria Skatepark">
-           <img class="carousel-image" src="image-skates\zapote_skate2.jpg" alt="Jose Maria Skatepark">
+           <img class="carousel-image active" src="image-skates\savador_skatepark (2).webp" alt="salvador-skat">
+           <img class="carousel-image" src="image-skates\savador_skatepark (2).webp" alt="salvador-skat">
+           <img class="carousel-image" src="image-skates\savador_skatepark (2).webp" alt="Jose Maria Skatepark">
+           <img class="carousel-image" src="image-skates\savador_skatepark (2).webp" alt="Jose Maria Skatepark">
         </div> 
 
           <div class="carousel-text">
@@ -75,7 +75,7 @@
      <button class="carousel-btn prev">❮</button>
      <button class="carousel-btn next">❯</button>
     </div>
-      <div class="single-carousel">
+      <div class="single-carousel" data-name="moravia-skat">
         <div class="carousel-track">
            <img class="carousel-image active" src="image-skates/jose_ma_skate.webp" alt="moravia-skat">
            <img class="carousel-image" src="image-skates\costaRicaTamarindoSkatePark-01-1024x512.jpg" alt="moravia-skat">
@@ -98,7 +98,7 @@
      <button class="carousel-btn prev">❮</button>
      <button class="carousel-btn next">❯</button>
     </div>
-      <div class="single-carousel">
+      <div class="single-carousel" data-name="zapote-skat">
         <div class="carousel-track">
            <img class="carousel-image active" src="image-skates/jose_ma_skate.webp" alt="zapote-skat">
            <img class="carousel-image" src="image-skates\zapote_skate2.jpg" alt="zapote-skat">
@@ -120,7 +120,7 @@
      <button class="carousel-btn prev">❮</button>
      <button class="carousel-btn next">❯</button>
     </div>
-      <div class="single-carousel">
+      <div class="single-carousel" data-name="alajuelita-skat">
         <div class="carousel-track">
            <img class="carousel-image active" src="image-skates\Skatepark-Alajuelita-in-Costa-Rica0.jpg" alt="alajuelita-skat">
            <img class="carousel-image" src="image-skates\Skatepark-Alajuelita-in-Costa-Rica0.jpg" alt="alajuelita-skat">
@@ -139,7 +139,7 @@
      <button class="carousel-btn prev">❮</button>
      <button class="carousel-btn next">❯</button>
     </div>
-      <div class="single-carousel">
+      <div class="single-carousel" data-name="lindora-l-skat">
         <div class="carousel-track">
            <img class="carousel-image active" src="image-skates\lagos_skate.webp" alt="lagos-skat">
            <img class="carousel-image" src="" alt="lagos-skat">
@@ -157,7 +157,7 @@
      <button class="carousel-btn prev">❮</button>
      <button class="carousel-btn next">❯</button>
     </div>
-      <div class="single-carousel">
+      <div class="single-carousel" data-name="luzo-skat">
         <div class="carousel-track">
            <img class="carousel-image active" src="image-skates\luzo_skatepark.webp" alt="luzo-skat"> 
            <img class="carousel-image" src="" alt="luzo-skat"> 
@@ -177,7 +177,7 @@
      <button class="carousel-btn prev">❮</button>
      <button class="carousel-btn next">❯</button>
     </div>
-      <div class="single-carousel">
+      <div class="single-carousel" data-name="los-pinos-skat">
         <div class="carousel-track">
            <img class="carousel-image active" src="image-skates\lospinos_skate.webp" alt="pinos-skat">
            <img class="carousel-image" src="" alt="pinos-skat">
@@ -196,7 +196,7 @@
      <button class="carousel-btn prev">❮</button>
      <button class="carousel-btn next">❯</button>
     </div>
-      <div class="single-carousel">
+      <div class="single-carousel" data-name="Lagos-skat">
         <div class="carousel-track">
            <img class="carousel-image active" src="image-skates\lagos_skate.webp" alt="lagos-skat">
            <img class="carousel-image active" src="image-skates\lagos_skate.webp" alt="lagos-skat">
@@ -245,11 +245,10 @@
     showImage(index);
   });
 
-  prevBtn.addEventListener("click", () => {
-    index = (index - 1 + images.length) % images.length;
-    showImage(index);
+     prevBtn.addEventListener("click", () => {
+      index = (index - 1 + images.length) % images.length;
+      showImage(index);
   });
-
 });
 </script>
 
