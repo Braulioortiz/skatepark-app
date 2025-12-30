@@ -40,6 +40,7 @@ nav ul li a {
     text-decoration: none;
     margin: 20px;
     color: #fff;
+    font-size: 15px;
 }
 
 .menu-icon {
@@ -182,7 +183,7 @@ a{
  }
 
 /* style for the input within search, if it's necessary*/
-#search-input {
+#searchInput {
     width: 80%;
     font-size: 16px;
 }
@@ -276,15 +277,21 @@ span {
 .select {
     position: absolute;
     display: content;
-    background-color: #ff5614;
-    color:white;
+    background-color: #252525;
+    color:rgb(255, 255, 255);
     cursor: pointer;
     justify-content: space-between;
     margin: 0 80px;
     width: 15vw;
     padding: 10px;
     bottom: 30px;
-    border-radius: 5px;
+    border-radius: 1rem;
+}
+
+.select:hover {
+    background-color: #6d6d6d;
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
 }
 
 .arrow button {
@@ -302,7 +309,7 @@ span {
 }
 
 .arrow button:hover {
-    background: rgba(255, 118, 27, 0.7); 
+    background:#050505be;
     color: white;
 }
 
