@@ -22,7 +22,7 @@
       </div>
     </nav>
     
-    <div class="hero-image">
+<div class="hero-image">
           <img src="image-skates\skater_img2.jpg" alt="skate-image" >
 
     <div class="banner-text" >
@@ -30,32 +30,6 @@
           <p>All you want to know about your next ride.</p>
      </div>
 
-    <div class="container-button">
-        <div class="search-container"> 
-          <input id="searchInput" type="text" list="suggestions" placeholder="search-by-name">
-             <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
-               <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
-             </svg>
-              <datalist id="suggestions">
-                <option value="jose maria-skat"></option>
-                <option value="bowl-guachipelin-skat"></option>
-                <option value="salvador-skat"></option>
-                <option value="moravia-skat"></option>
-                <option value="zapote-skat"></option>
-                <option value="alajuelita-skat"></option>
-                <option value="lindora-L-skat"></option>
-                <option value="lagos-skat"></option>
-                <option value="luzo-skat"></option>
-                <option value="los-pinos-skat"></option>
-             </datalist>
-          <button 
-                  onclick=""
-                  id="go-btn" 
-                  type="button" 
-                  style="background-color: rgb(253, 127, 9); font-size: 15px; cursor: pointer; border: 2px solid gray; color: white;">
-                  Search
-         </button>
-        </div>
         <div class="list-skate"> 
            <button class="btn">
             <a href="skatepark.html">Skatepark list</a>
@@ -72,20 +46,39 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000">
               <path d="M290 0q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9Zm340 0q-12 0-21-9t-9-21q0-12 9-21t21-9q12 0 21 9t9 21q0 12-9 21t-21 9ZM270-80q-45 0-83-19.5T124-152q-3-5-4.5-9t-1.5-9q0-12 8-21t22-9q8 0 13.5 3t10.5 9q12 17 30.5 28.5T242-143l125-151-53-166q-5-17-3-34t11-32l96-154h-94l-76 122-68-42 100-160h228q27 0 43.5 15t22.5 28l21 48q20 48 64.5 78.5T760-560v80q-70 0-128-33.5T539-602l-72 115 173 107v240h12q29 0 54-13t42-35q5-6 10.5-9t13.5-3q13 0 21.5 9t8.5 21q0 5-1.5 9t-4.5 9q-25 33-62 52.5T652-80H270Zm74-60h216v-184l-140-88 40 132-116 140Zm256-620q-33 0-56.5-23.5T520-840q0-33 23.5-56.5T600-920q33 0 56.5 23.5T680-840q0 33-23.5 56.5T600-760Z"/>
             </svg>
-        </div>
-    </div>
-  </div>
-        <span>
-            Here we bring to you the easy way to explore more about your next day ride.
-          Did it happen to you when you are making plans for the ride to some skatepark 
-          and you do not know where to go or even how  to get there...?
-          this aplication were made exactly to giving just the nesesary 
-          for getting there and make sure your day ride,
-          lets take a look down below!.
-        </span>
-          <h2 id="indication">Select your destination.</h2> 
+        </div>            
+        
+        <h2 id="indication">Select your destination.</h2> 
 
-  <div class="slider-container">
+    <div class="container-button">
+        <div class="search-container"> 
+          <input id="searchInput" type="text" list="suggestions" placeholder="search-by-name">
+             <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+               <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+             </svg>
+              <datalist id="suggestions">
+                  <option value="Moravia">
+                  <option value="Jose Maria">
+                  <option value="Salvador">
+                  <option value="Alajuelita">
+                  <option value="Luzo">
+                  <option value="Lindora">
+                  <option value="Plaza Viquez">
+                  <option value="Guachipelin">
+                  <option value="Zapote">
+                  <option value="Los Lagos">
+              </datalist>
+ 
+          <button 
+                  id="go-btn" 
+                  type="button" 
+                  style="background-color: rgb(59, 59, 59); width: 65px; font-size: 17px; cursor: pointer; border: 1px solid rgb(233, 233, 233); color: rgb(233, 233, 233);">
+                  search
+         </button>
+    </div> 
+</div>
+
+<div class="slider-container">
     <div class="slider">
         <div class="item">
             <div class="image">
@@ -101,9 +94,14 @@
                   It was designed as a space for both skateboarding and BMX. The surrounding park area offers green spaces, 
                   walking trails, and playgrounds, making it a family-friendly destination.
                 </span>
-                <button class="select">Go to map</button>
+                <button 
+                    class="select"
+                    data-map="https://www.google.com/maps?q=Moravia+Skatepark+Costa+Rica">
+                    Go to map
+                </button>
             </div>
         </div>
+
         <div class="item">
             <div class="image">
                 <img src="image-skates\jose_ma_skate.webp" alt="">
@@ -116,9 +114,14 @@
                     and it is a free and popular destination for skaters and BMX riders. The park is part of the larger José María Zeledón Municipal Park, 
                     which offers other amenities, and it has received positive reviews for its lively community atmosphere and facilities. 
                 </span>
-                <button class="select">Go to map</button>
+                <button 
+                    class="select"
+                    data-map="https://www.google.com/maps?q=Jose+Maria+Zeledon+Skatepark">
+                    Go to map
+            </button>
             </div>
         </div>
+
         <div class="item">
             <div class="image">
                 <img src="image-skates\savador_skatepark.webp" alt="">
@@ -141,12 +144,17 @@
                     Longitude
                     -84.1
                 </span>
-                <button class="select">Go to map</button>
+                <button
+                    class="select"
+                    data-map="https://www.google.com/maps?q=Salvador+Skatepark+San+Jose">
+                    Go to map
+               </button>
             </div>
         </div>
+
         <div class="item">
             <div class="image">
-                <img src="image-skates\Skatepark-Alajuelita-in-Costa-Rica0.jpg" alt="">
+                <img src="image-skates\Skatepark-Alajuelita-in-Costa-Rica0.jpg" alt="alajuelita-skat">
             </div>
             <div class="information">
                 <div class="title">Alajuelita Skatepark</div>
@@ -155,9 +163,14 @@
                     Costa Rica. It features distinct areas for street, bowl, and BMX, and is considered one of the best in the country. 
                     The park opened in July 2023 and is managed by the Municipality of Alajuelita. 
                 </span>
-                <button class="select">Go to map</button>
+                <button 
+                   class="select"
+                   data-map="https://www.google.com/maps?q=Alajuelita+Skatepark">
+                   Go to map
+                </button>
             </div>
         </div>
+
         <div class="item">
             <div class="image">
                 <img src="image-skates\luzo_skatepark.webp" alt="">
@@ -170,9 +183,14 @@
                     While the park provides a positive space for many, user reviews have raised concerns about safety issues related to drug use, 
                     inadequate maintenance, and insufficient policing. 
                 </span>
-                <button class="select">Go to map</button>
+                <button 
+                    class="select"
+                    data-map="https://www.google.com/maps?q=Luzo+Skatepark+Heredia">
+                    Go to map
+                </button>
             </div>
         </div>
+
         <div class="item">
             <div class="image">
                 <img src="image-skates\santa_ana_skatepark.jpeg" alt="">
@@ -183,23 +201,33 @@
                     Lagos de Lindora Skatepark: A new skatepark was announced for construction in the Lagos de Lindora area of Santa Ana, 
                     Costa Rica, with a tender for its design and construction issued in 2020 by the Municipalidad de Santa Ana. 
                 </span>
-                <button class="select">Go to map</button>
+                <button 
+                    class="select"
+                    data-map="">
+                    Go to map
+                </button>
             </div>
         </div>
+
         <div class="item">
             <div class="image">
                 <img src="image-skates\lospinos_skate.webp" alt="">
             </div>
             <div class="information">
-                <div class="title">Los Pinos skatepark</div>
+                <div class="title">Plaza viquez skatepark</div>
                 <span>
-                    Skatepark Los Pinos is a free, concrete skatepark located in Cartago, Costa Rica, behind the Escuela Vial Municipal.
+                    Skatepark plaza viquez, concrete skatepark located in Cartago, Costa Rica, behind the Escuela Vial Municipal.
                     It is open daily from 9 AM to 5 PM and requires visitors to register with the guard at the entrance. 
                     The park features various obstacles like ledges, rails, and quarter pipes, but some areas may need maintenance. 
                 </span>
-                <button class="select">Go to map</button>
+                <button 
+                    class="select"
+                    data-map="">
+                    Go to map
+                </button>
             </div>
         </div>
+
         <div class="item">
             <div class="image">
                 <img src="image-skates\guachipelin_skate.jpg" alt="">
@@ -213,9 +241,14 @@
                     Visitors appreciate the well-maintained spaces for exercise and leisure, 
                     making it an ideal destination for relaxation and social gatherings.
                 </span>
-                <button class="select">Go to map</button>
+                <button 
+                    data-map=""
+                    class="select">
+                    Go to map
+                </button>
             </div>
         </div>
+
         <div class="item">
             <div class="image">
                 <img src="image-skates\zapote_skate2.jpg" alt="">
@@ -228,9 +261,14 @@
                     though past reports noted condition issues like broken obstacles or poor lighting, 
                     managed by the local Sports Committee (CCDRSJ) for community use, serving as a local spot for skater
                 </span>
-                <button class="select">Go to map</button>
+                <button
+                     class="select"
+                     data-map="https://www.google.com/maps?q=Zapote+Skatepark">
+                     Go to map
+                </button>
             </div>
         </div>
+        
         <div class="item">
             <div class="image">
                 <img src="image-skates\lagos_skate.webp" alt="">
@@ -251,8 +289,18 @@
         <button id="left" onclick="left()">&#10094;</button>
         <button id="right" onclick="right()">&#10095;</button>
     </div>
-</div>
-                        
+  </div>
+ </div>
+
+        <div class="text-1">
+            Here we bring to you the easy way to explore more about your next day ride.
+          Did it happen to you when you are making plans for the ride to some skatepark 
+          and you do not know where to go or even how  to get there...?
+          this aplication were made exactly to giving just the nesesary 
+          for getting there and make sure your day ride,
+          lets take a look down below!.
+        </div>
+                    
     <div class="footer">
            <li><a href="skatepark.html">Skateparks List></a></li>
            <li><a href="#">Go to skatepark map</a></li>
@@ -295,13 +343,52 @@
    }
    </script>
 
-   <script>
-    function searchPark() {
-    const value = document.getElementById("searchInput").value;
-     window.location.href = `skatepark.html?search=${encodeURIComponent(value)}`;
-   }     
+
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const goBtn = document.getElementById("go-btn");
+  const slider = document.querySelector(".slider");
+  const items = document.querySelectorAll(".slider .item");
+
+  let currentIndex = 0;
+
+// mover slider al item correcto
+function goToSlide(index) {
+  const itemWidth = items[0].offsetWidth;
+  slider.style.transform = `translateX(-${itemWidth * index}px)`;
+  slider.style.transition = "transform 0.5s ease";
+  currentIndex = index;
+}
+
+// buscar skatepark
+goBtn.addEventListener("click", () => {
+  const searchValue = searchInput.value.toLowerCase().trim();
+  let found = false;
+
+  items.forEach((item, index) => {
+    const title = item.querySelector(".title").textContent.toLowerCase();
+
+    if (title.includes(searchValue)) {
+      goToSlide(index);
+      found = true;
+    }
+  });
+
+  if (!found) {
+    alert("Skatepark no encontrado");
+  }
+});
 </script>
 
-  
+<script>
+   const mapButtons = document.querySelectorAll(".select");
+
+   mapButtons.forEach(button => {
+     button.addEventListener("click", () => {
+      const mapUrl = button.dataset.map;
+     window.open(mapUrl, "_blank");
+    });
+  });
+</script>
   </body>
  </html> 
