@@ -86,7 +86,6 @@ nav ul li a {
         margin-top: 30%;
     }
 
-    .search-container,
     .list-skate,
     .event {
         max-width: 325px;
@@ -109,6 +108,14 @@ nav ul li a {
     .slider .item {
         margin: 41px;
     }
+
+    .slider button {
+        display: block;
+        justify-self: center;
+        margin-bottom: 20px;        
+        height: 42px;
+        width: 200px;
+    }
 }
 
 .menu-icon i{
@@ -120,13 +127,15 @@ nav ul li a {
 .hero-image {
     display: block;
     position: relative;
+    height: 100vh;
+    width: 100%;
     justify-content: center;
-    background-color: #000;
+    background-color: #7a7a7a;
 }
 
 .hero-image img {
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -134,35 +143,31 @@ nav ul li a {
     position: relative;
     justify-content: center;
     display: block;
-    bottom: 35rem;
+    bottom: 85%;
 }
 h2 {
+   position: absolute;
    justify-self: center;
    display: block;
    font-size: 50px;
-   color: #5a076b;
+   color: #ffffff;
 }
+
 p {
+    position: absolute;
     justify-self: center;
     display: block;
     font-size: 20px;
-    color: #000;
-}
-
-#indication {
-    position: absolute;
-    margin-top: -18rem;
     color: #fff;
-    font-size: 20px;
-    font-family:sans-serif;
+    top: 9vh;
 }
 
 .container-button
 .search-container {
   display: flex;
-  position: absolute;
+  position: relative;
   padding: 30px;
-  bottom: 56rem;
+  top: 0;
 }
 
 /* style for the input within search, if it's necessary*/
@@ -173,7 +178,7 @@ p {
 
 input {
     backdrop-filter: blur(5px);
-    background: #b3b3b3;
+    background: #d8d8d8;
     border: 1px solid gray;
     height: 6vh;
     border-radius: 5px;
@@ -186,7 +191,7 @@ input {
 .event {
    display: flex;
    position: relative;
-   justify-content: space-between;
+   justify-content: space-around;
    padding: 10px;
    border: 1px solid rgb(151, 151, 151);
    background: #6d6d6da1; 
@@ -194,7 +199,7 @@ input {
    border-radius: 10px;
    margin: 45px;
    width: 450px;
-   bottom: 27rem;
+   bottom: 31rem;
    height: 8vh;
    font-family: sans-serif;
 }
@@ -219,7 +224,7 @@ a{
 .text-1 {
     display: flex;
     text-align: center;
-    padding: 15px;
+    padding: 3%;
     margin: 15px;
     font-size: 19px;
     font-family: sans-serif;
@@ -240,6 +245,7 @@ span {
     height: 800px;
     overflow: hidden;
     position: relative;
+    top: 2vh;
 }
 
 /* internal carousel */
@@ -252,11 +258,12 @@ span {
 .slider .item {
     width: 100%;
     padding: 30px;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-right: 50px;
     margin-top: 10px;
     z-index: 999;
+    background-color: #000000;
 }
 
 /*responsive image */
@@ -270,7 +277,7 @@ span {
 /* Information */
 .information {
     max-width: max-content;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     justify-content: center;
 }
 
@@ -287,7 +294,7 @@ span {
     flex-wrap: wrap;
     font-family: sans-serif;
     justify-content: center;
-    color: white;
+    color: #fff;
 }
 
 .select {
@@ -305,9 +312,9 @@ span {
 }
 
 .select:hover {
-    background-color: #6d6d6d;
+    background-color: #ffffff;
     transition: 0.2s;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .arrow button {
