@@ -129,6 +129,19 @@ h2 {
     transition: 0.2s;
 }
 
+.button-map {
+       display: flex;
+       position: absolute;
+       justify-content: center;
+       width: 100px;
+       background-color: rgb(40, 66, 68);
+       border-radius: 5px;
+       color: #fff;
+       text-decoration: none;
+       margin: 0 80%;
+       padding: 5px;
+       top: 95%;
+    }
 
 .footer li a{
     margin: 30px;
@@ -173,5 +186,26 @@ h2 {
 
     #menuList {
         transition: all 0.5s;
+    }
+
+    .carousel-text {
+        margin: 10px;
+        padding: 0 auto;
+        display: block;
+        margin-bottom: 10vh;
+    }
+
+    .button-map {
+       display: flex;
+       position: absolute;
+       justify-content: center;
+       width: 100px;
+       background-color: rgb(40, 66, 68);
+       border-radius: 5px;
+       color: #fff;
+       text-decoration: none;
+       margin: 0 70%;
+       padding: 5px;
+       top: 97%;
     }
 }
