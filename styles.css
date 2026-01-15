@@ -15,7 +15,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#2b2b2b;
+    background: rgb(24, 49, 51);
     position: relative;
     height: 55px;
 }
@@ -28,7 +28,7 @@ nav{
 nav ul {
     display: flex;
     gap: 10px;   
-    margin-bottom: 15px;
+    top: 0;
     justify-items: center;
 }
 
@@ -39,6 +39,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     margin: 20px;
+    padding: 0 20px;
     color: #fff;
     font-size: 15px;
 }
@@ -199,7 +200,7 @@ input {
    border-radius: 10px;
    margin: 45px;
    width: 450px;
-   bottom: 31rem;
+   bottom: 27rem;
    height: 8vh;
    font-family: sans-serif;
 }

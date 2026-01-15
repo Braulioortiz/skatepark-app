@@ -83,9 +83,8 @@
                   style="align-self: center; background-color: rgb(253, 253, 253); width: 100px; height: 40px; font-size: 17px; cursor: pointer; border: 1px solid rgb(0, 0, 0); border-radius: 10px; color: rgb(0, 0, 0);">
                   search
          </button>
-
         
-    </div> 
+        </div> 
     </div>
     
     <div class="slider-container">
@@ -214,7 +213,7 @@
                 </span>
                 <button 
                     class="select"
-                    data-map="">
+                    data-map="https://www.google.com/maps?q=Lindora+lagos+skatepark">
                     Go to map
                 </button>
             </div>
@@ -233,7 +232,7 @@
                 </span>
                 <button 
                     class="select"
-                    data-map="">
+                    data-map="https:www.google.com/maps?q=Plaza+gonzalez+viquez+skatepark">
                     Go to map
                 </button>
             </div>
@@ -293,7 +292,7 @@
                 </span>
                  <button
                      class="select"
-                     data-map="">
+                     data-map="https://www.google.com/maps?q=Los+lagos+skatepark">
                      Go to map
                 </button>
             </div>
@@ -311,89 +310,9 @@
            <li><a href="#">Go to skatepark map</a></li>
            <li><a href="#">Nearest event</a></li>
     </div>
-   </main>
-   
-   <script src="script.js"></script>
-   <script src="https://kit.fontawesome.com/b0440afd81.js" crossorigin="anonymous"></script>
-   <script>
-        let index = 0;
 
-        function showSlide() {
-        const slider = document.querySelector('.slider');
-        const items = document.querySelectorAll('.slider .item');
-        const total = items.length;
-
-    // to move the slider
-        slider.style.transform = `translateX(${-index * 100}%)`;
-       }
-
-        function left() {
-        const items = document.querySelectorAll('.slider .item');
-         if (index > 0) {
-        index--;
-       } else {
-        index = items.length - 1; // come back to the final if it's at the beginning
-      }
-      showSlide();
-    }
-
-        function right() {
-        const items = document.querySelectorAll('.slider .item');
-         if (index < items.length - 1) {
-        index++;
-        } else {
-        index = 0; // come back to the beginning if it's at the final
-    }
-    showSlide();
-   }
-   </script>
-
-
-<script>
-  const searchInput = document.getElementById("searchInput");
-  const goBtn = document.getElementById("go-btn");
-  const slider = document.querySelector(".slider");
-  const items = document.querySelectorAll(".slider .item");
-
-  let currentIndex = 0;
-
-// mover slider al item correcto
-function goToSlide(index) {
-  const itemWidth = items[0].offsetWidth;
-  slider.style.transform = `translateX(-${itemWidth * index}px)`;
-  slider.style.transition = "transform 0.5s ease";
-  currentIndex = index;
-}
-
-// buscar skatepark
-goBtn.addEventListener("click", () => {
-  const searchValue = searchInput.value.toLowerCase().trim();
-  let found = false;
-
-  items.forEach((item, index) => {
-    const title = item.querySelector(".title").textContent.toLowerCase();
-
-    if (title.includes(searchValue)) {
-      goToSlide(index);
-      found = true;
-    }
-  });
-
-  if (!found) {
-    alert("Skatepark no encontrado");
-  }
-});
-</script>
-
-<script>
-   const mapButtons = document.querySelectorAll(".select");
-
-   mapButtons.forEach(button => {
-     button.addEventListener("click", () => {
-      const mapUrl = button.dataset.map;
-     window.open(mapUrl, "_blank");
-    });
-  });
-</script>
+      </main>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/b0440afd81.js" crossorigin="anonymous"></script>
   </body>
  </html> 
